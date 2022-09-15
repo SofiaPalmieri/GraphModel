@@ -31,6 +31,8 @@ public abstract class Graph<N, E> {
         if (nodes.contains(node)) {
             nodes.remove(node);
             node.removeEdges();
+        }else{
+            throw new RuntimeException("Nodes are not present in the graph");
         }
     }
 

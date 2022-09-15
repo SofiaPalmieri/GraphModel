@@ -44,8 +44,7 @@ public class Node <N, E>{
 
     public void removeEdges(){
         Set<Edge<E, N>> currentEdges = edges;
-        edges.stream().filter(e -> this.equals(e.nodeA)).forEach(e -> e.setNodeA(null));
-        edges.stream().filter(e -> this.equals(e.nodeB)).forEach(e -> e.setNodeB(null));
+        edges.forEach(Edge::nullNodes);
         edges.removeAll(currentEdges);
     }
 

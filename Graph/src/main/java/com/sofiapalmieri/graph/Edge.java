@@ -27,9 +27,9 @@ public abstract class Edge <E, N>{
 
     public abstract boolean isPointingTo(Node<N, E> node);
 
-    public void nullNodes(){
-        this.nodeA = null;
-        this.nodeB = null;
+    public void detach(){
+        getNodeA().removeEdge(this);
+        getNodeB().removeEdge(this);
     }
 
 }

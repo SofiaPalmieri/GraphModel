@@ -43,9 +43,8 @@ public class Node <N, E>{
     }
 
     public void removeEdges(){
-        Set<Edge<E, N>> currentEdges = edges;
-        edges.forEach(Edge::nullNodes);
-        edges.removeAll(currentEdges);
+        Set<Edge<E, N>> copyOfEdges = new HashSet<>(edges);
+        copyOfEdges.forEach(Edge::detach);
     }
 
 }

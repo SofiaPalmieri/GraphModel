@@ -32,10 +32,11 @@ public abstract class Graph<N, E> {
             nodes.remove(node);
             node.removeEdges();
         }else{
-            throw new RuntimeException("Nodes are not present in the graph");
+            throw new RuntimeException("Node is not present in the graph");
         }
     }
 
+    //Node 1 (from node) Node 2 (to node)
     public Edge<E, N> setEdge(Node<N, E> node1, Node<N, E> node2, E value){
         if(nodes.contains(node1) && nodes.contains(node2)){
             Edge<E, N> edge = node1.getEdgeToNode(node2);

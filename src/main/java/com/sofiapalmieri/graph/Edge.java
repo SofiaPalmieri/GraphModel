@@ -25,6 +25,10 @@ public abstract class Edge <E, N>{
         this.nodeB = nodeB;
     }
 
+    public Edge() {
+
+    }
+
     public abstract boolean isPointingTo(Node<N, E> node);
 
     public void detach(){

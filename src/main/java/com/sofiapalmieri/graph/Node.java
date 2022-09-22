@@ -16,7 +16,7 @@ public class Node <N, E>{
     protected N value;
 
 
-    public Node(N value){
+    public Node(){
         this.edges = new HashSet<>();
         this.value = value;
     }

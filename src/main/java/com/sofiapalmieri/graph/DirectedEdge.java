@@ -9,8 +9,8 @@ public class DirectedEdge<E, N> extends Edge<E, N> {
         super(fromNode, toNode, value);
     }
 
-    public DirectedEdge(Node<N, E> fromNode, Node<N, E> toNode){
-        super(fromNode, toNode);
+    public DirectedEdge() {
+        super();
     }
 
 

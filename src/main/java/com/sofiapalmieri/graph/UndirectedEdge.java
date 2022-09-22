@@ -10,6 +10,10 @@ public class UndirectedEdge<E, N> extends Edge<E, N> {
         super(nodeA, nodeB);
     }
 
+    public UndirectedEdge() {
+
+    }
+
     @Override
     public boolean isPointingTo(Node<N, E> node){
         return nodeA.equals(node) || nodeB.equals(node);

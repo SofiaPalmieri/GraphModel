@@ -21,12 +21,13 @@ public class AdjacencyMatrixTest<N, E> {
         node1.addEdge(edge1);
         node1.addEdge(edge2);
         node1.addEdge(edge3);
+        node2.addEdge(edge1);
+        node2.addEdge(edge2);
+        node2.addEdge(edge3);
         edge1.setNodeA(node1);
         edge1.setNodeB(node2);
         edge2.setNodeA(node2);
         edge2.setNodeB(node1);
-        edge3.setNodeA(node1);
-        edge3.setNodeB(node2);
         graph1.addNode(node1);
         graph1.addNode(node2);
     }

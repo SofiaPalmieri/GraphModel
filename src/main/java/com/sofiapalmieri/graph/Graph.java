@@ -11,7 +11,7 @@ public abstract class Graph<N, E> {
     }
 
     public boolean[][] getAdjacencyMatrix() {
-        boolean[][] matrix = new boolean[nodes.size()][nodes.size()];
+        boolean[][] matrix = new boolean[100][100];
         int i = 0, j = 0;
         for (Node<N, E> node1 : nodes) {
             for (Node<N, E> node2 : nodes) {
